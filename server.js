@@ -80,11 +80,6 @@ app.delete('/data/:id', async (req, res) => {
   }
 });
 
-async function startServer() {
-  await prisma.$connect();
-  console.log('Connected to the database');
-}
-
 startServer();
 
 // Start the server
